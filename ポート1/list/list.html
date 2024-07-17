@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="small.css" media="screen and (max-width:767px)">
+    <script src="https://kit.fontawesome.com/cd9a5136e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container m-auto pt-16 px-10 sm:px-4">
+        <div class="fixButton">
+            <i id="scrollToTop" class="fa-solid fa-arrow-up"></i>
+            <span></span>
+            <i class="fa-regular fa-comment"></i>
+        </div>
+        <header class="flex flex-nowrap items-center justify-between md:hidden sm:hidden">
+            <a href="../index/index.html" class="logo w-16 h-16 ml-5">
+                <img src="../image/content/logo.png" alt="">
+            </a>
+            <div class="nav flex flex-auto justify-center items-center px-28 lg:px-16 font-serif font-semibold">
+                <ul class="flex w-1/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="../list/list.html">Best</a>
+                    <a href="../list/list.html">New</a>
+                </ul>
+                <div class="bg-black w-px h-12"></div>
+                <ul class="flex w-3/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="../list/list.html">Suit</a>
+                    <a href="../list/list.html">Shirts</a>
+                    <a href="../list/list.html">Outer</a>
+                    <a href="../list/list.html">Zip-up</a>
+                    <a href="../list/list.html">Hoodie</a>
+                    <a href="../list/list.html">Bottom</a>
+                    <a href="../list/list.html">Other</a>
+                </ul>
+            </div>
+            <div class="account w-8 h-8">
+                <img src="../icon/user-regular.svg" alt="">
+            </div>
+        </header>
+        <!-- <header class="hidden md:flex sm:flex flex-col items-center">
+            <a href="index.html" class="logo w-16 h-16 ml-5">
+                <img src="../image/content/logo.png" alt="">
+            </a>
+            <div class="account w-8 h-8 absolute top-16 right-10">
+                <img src="../icon/user-regular.svg" alt="">
+            </div>
+            <div class="flex flex-auto w-full justify-center items-center font-serif font-semibold">
+                <ul class="flex w-1/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="list.html">Best</a>
+                    <a href="list.html">New</a>
+                </ul>
+                <div class="bg-black w-px h-12"></div>
+                <ul class="flex w-3/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="list.html">Suit</a>
+                    <a href="list.html">Shirts</a>
+                    <a href="list.html">Outer</a>
+                    <a href="list.html">Zip-up</a>
+                    <a href="list.html">Hoodie</a>
+                    <a href="list.html">Bottom</a>
+                    <a href="list.html">Other</a>
+                </ul>
+            </div>
+        </header> -->
+        <section class="list">
+            <h1 class="list_title">Suit</h1>
+            <ul class="[&>*:nth-child(4n)]:mr-0 [&>*:nth-child(n)]:mb-2 flex flex-wrap">
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_1 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_2 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_3 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_4 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_5 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_6 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_7 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_8 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_9 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_10 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_11 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_12 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+            </ul>
+        </section>
+    </div>
+    <footer class="w-full h-52">
+        <div class="flex h-full px-60 lg:px-40 md:px-10 sm:px-5 justify-between items-center">
+            <div class="flex">
+                <ul class="font-['Noto400'] text-white mr-12">
+                    <h1 class="text-2xl mb-5 sm:text-base">Rybenについて</h1>
+                    <li class="mb-1">会社紹介</li>
+                    <li class="mb-1">お知らせ</li>
+                    <li>社会貢献・地域活動</li>
+                </ul>
+                <ul class="font-['Noto400'] text-white">
+                    <h1 class="text-2xl mb-5 sm:text-base">ヘルプ＆ガイド</h1>
+                    <li class="mb-1">配送料と配送情報</li>
+                    <li class="mb-1">商品の返品・交換</li>
+                    <li>お客様サポート</li>
+                </ul>
+            </div>
+            <span class="block w-32 sm:w-16">
+                <img src="../image/content/Ryben.svg" alt="">
+            </span>
+        </div>
+    </footer> 
+    <script src="index.js"></script>
+    <script src="common.js"></script>
+</body>
+</html>

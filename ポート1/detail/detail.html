@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1024px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width:768px) and (max-width:1023px)">
+    <link rel="stylesheet" href="small.css" media="screen and (max-width:767px)">
+    <script src="https://kit.fontawesome.com/cd9a5136e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container m-auto pt-16 px-8">
+        <div class="fixButton">
+            <i id="scrollToTop" class="fa-solid fa-arrow-up"></i>
+            <span></span>
+            <i class="fa-regular fa-comment"></i>
+        </div>
+        <header class="flex flex-nowrap items-center justify-between md:hidden sm:hidden">
+            <a href="../index/index.html" class="logo w-16 h-16 ml-5">
+                <img src="../image/content/logo.png" alt="">
+            </a>
+            <div class="nav flex flex-auto justify-center items-center px-28 lg:px-16 font-serif font-semibold">
+                <ul class="flex w-1/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="../list/list.html">Best</a>
+                    <a href="../list/list.html">New</a>
+                </ul>
+                <div class="bg-black w-px h-12"></div>
+                <ul class="flex w-3/4 justify-evenly [&>*:nth-child(n)]:cursor-pointer">
+                    <a href="../list/list.html">Suit</a>
+                    <a href="../list/list.html">Shirts</a>
+                    <a href="../list/list.html">Outer</a>
+                    <a href="../list/list.html">Zip-up</a>
+                    <a href="../list/list.html">Hoodie</a>
+                    <a href="../list/list.html">Bottom</a>
+                    <a href="../list/list.html">Other</a>
+                </ul>
+            </div>
+            <div class="account w-8 h-8">
+                <img src="../icon/user-regular.svg" alt="">
+            </div>
+        </header>
+        <section class="main sm:hidden">
+            <div class="pictures">
+                <div class="picture_list w-[15%]">
+                    <img src="../image/model/detail_1.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                    <img src="../image/model/detail_2.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                    <img src="../image/model/detail_3.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                    <img src="../image/model/detail_4.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                </div>
+                <div class="main_picture w-[80%] max-h-[530px]">
+                    <img src="../image/model/detail_1.jpg" id="displayed-image" class="aspect-square rounded-r-lg object-cover" onclick="displayImage(this.src)"></img>
+                </div>
+            </div>
+            <div class="info w-[38.5%] border-t-4 border-slate-800 px-4 py-6 flex flex-col justify-between">
+                <h1 class="text-4xl font-[Noto700] lg:text-2xl md:text-2xl sm:text-2xl">商品名</h1>
+                <div class="price flex items-center">
+                    <h2 class="text-cyan-600 font-bold text-2xl">22%</h2>
+                    <p class="text-lg pl-2 pr-1 pt-1">12000￥</p>
+                    <s class="text-sm pt-1">15000￥</s>
+                </div>
+                <ul class="w-full border-y-2 border-slate-400 py-5">
+                    <li class="flex py-2">
+                        <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6">素材構成</span>
+                        <p class="font-[Noto700]">100% ポリエステル</p>
+                    </li>
+                    <li class="flex py-2">
+                        <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6">原産国</span>
+                        <p class="font-[Noto700]">日本</p>
+                    </li>
+                    <li class="flex py-2">
+                        <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6">性別タイプ</span>
+                        <p class="font-[Noto700]">メンズ</p>
+                    </li>
+                    <li class="flex py-2">
+                        <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6">送料</span>
+                        <p class="font-[Noto700]">配送ごとに¥250</p>
+                    </li>
+                </ul>
+                <div class="size flex justify-between pr-5 mt-5">
+                    <span class="font-[Noto700]">オプション</span>
+                    <select name="size" class="font-[Noto700] border mr-[5%]">
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                        <option value="2xl">2XL</option>
+                    </select>
+                </div>
+                <div class="button flex w-full justify-end">
+                    <div class="w-1/3 bg-[#5E6784] h-16 flex justify-center items-center rounded-l-lg">
+                        <p class="font-[Noto700] text-white">カートに入れる</p>
+                    </div>
+                    <div class="w-1/3 bg-[#404648] h-16 flex justify-center items-center rounded-r-lg">
+                        <p class="font-[Noto700] text-white">カートに入れる</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="mt-44 hidden sm:block">
+            <div class="flex flex-col">
+                <div class="flex">
+                    <div class="flex-grow">
+                        <img src="../image/모델/detail_1.jpg" class="w-full h-[19.5%] object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="../image/모델/detail_2.jpg" class="w-full h-[19.5%] object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="../image/모델/detail_3.jpg" class="w-full h-[19.5%] object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="../image/모델/detail_4.jpg" class="w-full h-[19.5%] object-cover" onclick="displayImage(this.src)"></img>
+                    </div>
+                    <div class="w-[81.5%] max-h-[570px]">
+                        <img src="../image/모델/detail_1.jpg" id="displayed-image" class="w-full rounded-r-lg" onclick="displayImage(this.src)"></img>
+                    </div>
+                    <div class="w-[15%]">
+                        <img src="./image/model/detail_1.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="./image/model/detail_2.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="./image/model/detail_3.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                        <img src="./image/model/detail_4.jpg" class="aspect-square object-cover" onclick="displayImage(this.src)"></img>
+                    </div>
+                    <div class="w-[80%] max-h-[530px]">
+                        <img src="./image/model/detail_1.jpg" id="displayed-image" class="aspect-square rounded-r-lg object-cover" onclick="displayImage(this.src)"></img>
+                    </div>
+                </div>
+                <div class="border-t-4 border-slate-800 mt-10 px-4 py-6 flex flex-col justify-between">
+                    <h1 class="text-4xl font-[Noto700] lg:text-2xl md:text-2xl sm:text-2xl">商品名</h1>
+                    <div class="flex items-center">
+                        <h1 class="text-cyan-600 font-bold text-2xl">22%</h1>
+                        <p class="text-lg pl-2 pr-1 pt-1">12000￥</p>
+                        <s class="text-sm pt-1">15000￥</s>
+                    </div>
+                    <ul class="w-full border-y-2 border-slate-400 py-5">
+                        <li class="flex py-2">
+                            <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6">素材構成</span>
+                            <p class="font-[Noto700]">100% ポリエステル</p>
+                        </li>
+                        <li class="flex py-2">
+                            <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6"">原産国</span>
+                            <p class="font-[Noto700]">日本</p>
+                        </li>
+                        <li class="flex py-2">
+                            <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6"">性別タイプ</span>
+                            <p class="font-[Noto700]">メンズ</p>
+                        </li>
+                        <li class="flex py-2">
+                            <span class="font-[Noto400] text-slate-400 mr-[5%] w-1/6"">送料</span>
+                            <p class="font-[Noto700]">配送ごとに¥250</p>
+                        </li>
+                    </ul>
+                    <div class="flex justify-between pr-5 mt-5">
+                        <span class="font-[Noto700]">オプション</span>
+                        <select name="size" class="font-[Noto700] border mr-[5%]">
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                            <option value="2xl">2XL</option>
+                        </select>
+                    </div>
+                    <div class="flex w-full justify-end mt-5">
+                        <div class="w-1/3 bg-[#5E6784] h-16 flex justify-center items-center rounded-l-lg">
+                            <h1 class="font-[Noto700] text-white">カートに入れる</h1>
+                        </div>
+                        <div class="w-1/3 bg-[#404648] h-16 flex justify-center items-center rounded-r-lg">
+                            <h1 class="font-[Noto700] text-white">カートに入れる</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section class="list">
+            <h1 class="list_title font-[Noto700] text-3xl mb-16 pl-4">おすすめアイテム</h1>
+            <ul class="[&>*:nth-child(4n)]:mr-0 [&>*:nth-child(n)]:mb-2 flex flex-wrap">
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_1 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_2 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_3 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+                <a href="../detail/detail.html"  class="w-[23.5%] mr-[2%]">
+                    <div class="list_4 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl sm:text-lg font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h2 class="text-cyan-600 font-bold text-base">22%</h1>
+                        <p class="text-lg pl-2">12000￥</p>
+                        <s class="text-sm">15000￥</s>
+                    </div>
+                </a>
+            </ul>
+        </section>
+        <!-- <section class="my-36 hidden sm:block">
+            <h1 class="font-[Noto700] text-3xl mb-16 pl-4">おすすめアイテム</h1>
+            <ul class="[&>*:nth-child(4n)]:mr-0 [&>*:nth-child(n)]:mb-2 flex flex-wrap">
+                <a href="./detail.html"  class="w-[49%] mr-[2%]">
+                    <div class="list_1 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h1 class="text-cyan-600 font-bold text-xl">22%</h1>
+                        <p class="text-lg pl-2 pr-1">12000￥</p>
+                        <s class="text-sm pt-1">15000￥</s>
+                    </div>
+                </a>
+                <a href="./detail.html"  class="w-[49%]">
+                    <div class="list_2 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h1 class="text-cyan-600 font-bold text-xl">22%</h1>
+                        <p class="text-lg pl-2 pr-1">12000￥</p>
+                        <s class="text-sm pt-1">15000￥</s>
+                    </div>
+                </a>
+                <a href="./detail.html"  class="w-[49%] mr-[2%]">
+                    <div class="list_3 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h1 class="text-cyan-600 font-bold text-xl">22%</h1>
+                        <p class="text-lg pl-2 pr-1">12000￥</p>
+                        <s class="text-sm pt-1">15000￥</s>
+                    </div>
+                </a>
+                <a href="./detail.html"  class="w-[49%]">
+                    <div class="list_4 w-full pt-[100%] rounded-xl"></div>
+                    <h1 class="text-2xl font-[Noto700] border-b-2 border-black pl-2 pt-2 pb-1">商品名</h1>
+                    <div class="flex pl-2 items-center pt-1">
+                        <h1 class="text-cyan-600 font-bold text-xl">22%</h1>
+                        <p class="text-lg pl-2 pr-1">12000￥</p>
+                        <s class="text-sm pt-1">15000￥</s>
+                    </div>
+                </a>
+            </ul>
+        </section> -->
+    </div>
+    <footer class="w-full h-52">
+        <div class="flex h-full px-60 lg:px-40 md:px-10 sm:px-5 justify-between items-center">
+            <div class="flex">
+                <ul class="font-['Noto400'] text-white mr-12">
+                    <h1 class="text-2xl mb-5 sm:text-base">Rybenについて</h1>
+                    <li class="mb-1">会社紹介</li>
+                    <li class="mb-1">お知らせ</li>
+                    <li>社会貢献・地域活動</li>
+                </ul>
+                <ul class="font-['Noto400'] text-white">
+                    <h1 class="text-2xl mb-5 sm:text-base">ヘルプ＆ガイド</h1>
+                    <li class="mb-1">配送料と配送情報</li>
+                    <li class="mb-1">商品の返品・交換</li>
+                    <li>お客様サポート</li>
+                </ul>
+            </div>
+            <span class="block w-32 sm:w-16">
+                <img src="../image/content/Ryben.svg" alt="">
+            </span>
+        </div>
+    </footer> 
+    <script>
+        function displayImage(imageSrc) {
+            document.getElementById('displayed-image').src = imageSrc;
+        }
+    </script>
+    <script src="../common.js"></script>
+</body>
+</html>

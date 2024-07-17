@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Noto700';
+  src: url("../font/NotoSerifJP-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Noto400';
+    src: url("../font/NotoSerifJP-Medium.otf");
+  }
+
+  @font-face {
+    font-family: 'Abril_Fatface';
+    src: url("../font/AbrilFatface-Regular.ttf");
+  }
+
+footer{
+    background-color: #080F24;
+}
+
+.container {
+    max-width: 1640px;
+}
+
+.banner img {
+    max-width: 570px;
+    max-height: 550px;
+}
+
+.banner_image img {
+    max-width: 460px;
+    max-height: 750px;
+}
+
+
+
+.pagination{
+    padding: 15px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+}
+.pagination:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.pagination.on {
+    background: #333;
+}
+
+.pagination:hover {
+    background: #333;
+}
+
+
+
+/* list_model_image */
+
+.list_1{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 15%;
+}
+
+.list_2{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 35%;
+}
+
+.list_3{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 55%;
+}
+
+.list_4{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+}
+
+.list_5{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 35%;
+}
+
+.list_6{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 15%;
+}
+
+.list_7{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+    background-position: 0 15%;
+}
+
+.list_8{
+    background-image: url(./image/model1.jpg);
+    background-size: cover;
+}
+
+.list_9{
+    background-image: url(./image/model1.jpg);
+    background-size: 120%;
+    background-position: 50% 35%;
+}
+
+.list_10{
+    background-image: url(./image/model10.jpg);
+    background-size: cover;
+    background-position: 0 5%;
+}
+
+.list_11{
+    background-image: url(./image/model11.jpg);
+    background-size: cover;
+    background-position: 0 65%;
+}
+
+.list_12{
+    background-image: url(./image/model12.jpg);
+    background-size: 110%;
+    background-position: 70% 55%;
+}
+
+/* detail_image */
+
+
+
+
+@layer components {
+    .category_card {
+        @apply h-full flex flex-col py-9 items-center rounded-3xl shadow-2xl
+    }
+}
+
+@media only screen and (min-width:1025px){
+    .new_main {
+        width: 120%;
+        height: 140%;
+        top: -40%;
+        left: -12%;
+        background-image: url('./image/model/main_new.png');
+    }
+    .e {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .new_main {
+        width: 120%;
+        height: 140%;
+        top: -40%;
+        left: -12%;
+        background-image: url('./image/model/main_new.png');
+    }
+    .a {
+        margin-bottom: 5%;
+    }
+
+    .c {
+        width: 33.3%;
+        height: 33%;
+    }
+
+    .c img {
+        height: 40%;
+    }
+
+    .d {
+        display: none;
+    }
+    
+}

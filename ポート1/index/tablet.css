@@ -1,0 +1,403 @@
+body {
+    overflow-x: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: 'Noto700';
+    src: url("../font/NotoSerifJP-Bold.otf");
+  }
+  
+@font-face {
+      font-family: 'Noto400';
+      src: url("../font/NotoSerifJP-Medium.otf");
+    }
+  
+@font-face {
+      font-family: 'Abril_Fatface';
+      src: url("../font/AbrilFatface-Regular.ttf");
+    }
+
+
+.container {
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 0 5%;
+}
+
+.fixButton {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 40px;
+    background: #080F24;
+    color: #fff;
+    padding: 6px;
+    border-radius: 15% 0 0 15%;
+    z-index: 10;
+    text-align: center;
+}
+
+.fixButton span {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 2px auto;
+}
+
+.fa-arrow-up {
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.fa-comment {
+    cursor: pointer;
+    font-size: 2rem;
+}
+/*  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+}
+
+.logo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 10%;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.account {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10%;
+}
+
+.account img {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+    margin-right: 8%;
+}
+
+.banner {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.banner_image {
+    width: 23%;
+}
+
+.banner_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/*  */
+.category {
+    margin-top: 100px;
+}
+
+.category h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.category ul {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.category li {
+    width: 20%;
+    text-align: center;
+}
+
+.category a {
+    display: block;
+    box-shadow: 5px 5px 5px #c6c6c6;
+    border-radius: 5%;
+    height: 60%;
+    padding: 5% 5% 20% 5%;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.category h3 {
+    transform: translateY(0);
+    font-size: 1.2rem;
+}
+
+/*  */
+.new {
+    display: none;
+}
+
+.newMobile {
+    display: block;
+}
+
+.new_main {
+    position: absolute;
+    background-image: url(..//image/model/main_new.png);
+    background-position: center center;
+    background-size: cover;
+    width: 120%;
+    height: 140%;
+    top: -40%;
+    left: -12%;
+
+}
+
+.newMobile h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.newBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.newUp {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.newUpLeft {
+    position: relative;
+    width: 35%;
+}
+
+.newUpLeft img {
+    width: 100%;
+    height: 100%;
+}
+
+.absolute1 {
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+.absolute1 h2 {
+    font-size: 1.2rem;
+}
+
+.absolute1 span {
+    font-size: 2rem;
+}
+
+.absolute2 {
+    position: absolute;
+    top: 5%; 
+    right: 5%;
+}
+
+.absolute2 h2 {
+    font-size: 1.2rem;
+}
+
+.absolute2 span {
+    font-size: 2rem;
+}
+
+
+.newUpRight{
+    width: 35%;
+    display: flex;
+    background: #E5E6E0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+}
+
+.newUpRight div:nth-child(1){
+    width: 50%;
+}
+.newUpRight img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.newUpRight h2 {
+    font-size: 2rem;
+    font-family: "Noto700";
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.newUpRight span {
+    font-size: 0.8rem;
+    font-family: "Noto400";
+    color: #4a4a4a;
+} 
+
+
+.newDown ul {
+    display: flex;
+    height: 45%;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+.newDown li {
+    width: 23.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/ 1;
+}
+
+.newDown li img {
+    width: 66%;
+    object-fit: cover;
+}
+
+.newDown li:nth-child(1){
+    background-color: #DCDAD2;
+}
+
+.newDown li:nth-child(2){
+    background-color: #F2F2EF;
+}
+
+.newDown li:nth-child(3){
+    background-color: #DFDFD6;
+}
+
+.newDown h2 {
+    font-size: 1.5rem;
+    font-family: "Noto700";
+    margin-bottom: 5%;
+}
+
+.buynow {
+    background-color: #fff;
+    max-width: 150px;
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.buynow a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  */
+.bestBox {
+    display: none;
+}
+
+.bestBoxMobile h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bestBoxMobile ul {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.bestBoxMobile li {
+    width: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.bestBoxMobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+/*  */
+footer{
+    background-color: #080F24;
+    height: 200px;
+}
+
+footer div {
+    display: flex;
+    height: 100%;
+    padding: 0 8%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div div {
+    display: flex;
+    width: 45%;
+}
+
+footer div div ul {
+    font-family: "Noto400";
+    color: #fff;
+    margin-right: 10%;
+}
+
+footer div div ul h1 {
+    margin-bottom: 20px;
+}
+
+footer div div ul li {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+footer div span {
+    display: block;
+    width: 80px;
+    margin-right: 5%;
+}
