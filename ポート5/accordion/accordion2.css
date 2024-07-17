@@ -1,0 +1,60 @@
+.accordion-container .accordion-title {
+    position: relative;
+    margin: 0;
+    padding: 0.625em 0.625em 0.625em 2em;
+    background-color: #000;
+    font-size: 1.25em;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+  }
+  .accordion-container .accordion-title:hover,
+  .accordion-container .accordion-title:active,
+  .accordion-title.open { 
+    background-color: #00aaa7;
+  }
+  
+  .accordion-container .accordion-title::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    width: 15px;
+    height: 2px;
+    /*縦線に*/
+    transform: rotate(90deg);
+    background: #fff;
+    transition: all .3s ease-in-out;
+  }
+  
+  .accordion-container .accordion-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    /*横線*/
+    width: 15px;
+    height: 2px;
+    background: #fff;
+    transition: all .2s ease-in-out;
+  }
+  
+  .accordion-container .accordion-title.open::before {
+    transform: rotate(180deg);
+  }
+  
+  .accordion-container .accordion-title.open::after {
+    opacity: 0;
+  }
+  
+  .accordion-content {
+    display: none;
+    padding-left: 2.3125em;
+    border: 1px solid #0079c1;
+  }
+  
+  /* CSS for CodePen */
+  .accordion-container {
+    width: 300px;
+    margin: 0 auto;
+  }

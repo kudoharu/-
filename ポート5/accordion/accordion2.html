@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="accordion2.css">
+</head>
+
+<body>
+    <div id="accordion" class="accordion-container">
+        <h4 class="accordion-title js-accordion-title">Accordion Title1</h4>
+        <div class="accordion-content">
+          <p>Accordion Content1</p>
+        </div>
+        <h4 class="accordion-title js-accordion-title">Accordion Title2</h4>
+        <div class="accordion-content">
+          <p>Accordion Content2</p>
+        </div>
+        <h4 class="accordion-title js-accordion-title">Accordion Title3</h4>
+        <div class="accordion-content">
+          <p>Accordion Content3</p>
+        </div>
+      </div>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        jQuery(function ($) {  
+  //タイトルがクリックされたら
+  $(".js-accordion-title").on('click', function () {
+    //クリックしたjs-accordion-title以外の全てのopenを取る
+    $(".js-accordion-title").not(this).removeClass("open");
+    //クリックされたjs-accordion-title以外のcontentを閉じる
+    $(".js-accordion-title").not(this).next().slideUp(300);
+    //thisにopenクラスを付与
+    $(this).toggleClass("open");
+    //thisのcontentを展開、開いていれば閉じる
+    $(this).next().slideToggle(300);
+  });
+  
+  /* 下記でもOK
+   $(".js-accordion-title").on('click', function () {
+     $(".js-accordion-title").not(this).removeClass("open").next().slideUp(300);
+     $(this).toggleClass("open").next().slideToggle(300);
+   });
+   */
+});
+    </script>
+</body>
+
+</html>
