@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BIZ+UDMincho&display=swap');
+
+body {
+    font-family: "BIZ UDMincho", serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+}
+#banner {
+    background-image: url(./image/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    position: relative;
+}
+
+.menu {
+    height: 230px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: end;
+    padding-top: 10%;
+    padding-right: 5%;
+    color: #fff;
+    font-size: 0.6rem;
+}
+
+.menu ul li {
+    padding: 0 3%;
+}
+
+.catch {
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+    color: #fff;
+    font-size: 2rem;
+}
+
+/*  */
+
+
+#intro {
+    width: 100%;
+    background-color: #001B33;
+    position: relative;
+}
+
+.syoukai1 {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+
+
+.syoukai1 img{
+    max-width: 1090px;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.syoukai1 div {
+    padding: 5%;
+    min-width: 30vw;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.syoukai1 h1 {
+    color: #999;
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.syoukai1 p {
+    color: #fff;
+    font-size: 0.6rem;
+    line-height: 2.5;
+    position: relative;
+    text-align: center;
+}
+
+
+
+.syoukai2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+.syoukai2 p {
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 2.5;
+    padding-top: 5%;
+    position: relative;
+    text-align: center;
+    order: 2;
+}
+
+
+.syoukai2 span {
+    max-width: 80%;
+    padding-right: 5%;
+    padding-left: 10vw;
+    order: 1;
+}
+
+.syoukai2 img{
+    max-width: 610px;
+    width: 100%;
+    height: 100%;
+    max-height: 370px;
+    object-fit: cover;
+}
+
+/*  */
+
+#ohuro {
+}
+
+.ohuropic {
+    padding-top: 10%;
+}
+.ohuropic ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.ohuropic li {
+    padding: 3%;
+}
+
+.ohuropic li:nth-of-type(4),
+
+.ohuropic li:nth-of-type(5),
+
+.ohuropic li:nth-of-type(6){
+    display: none;
+}
+
+.ohuropic li img {
+    width: 100%;
+    aspect-ratio: 1 / 0.4;
+    object-fit: cover; 
+}
+
+.ohuroinfo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.ohuroinfo h1 {
+    font-size: 1.2rem;
+    padding: 3% 0;
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+}
+
+.ohuroinfo p {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+/*  */
+#room {
+    display: none;
+}
+#room_sm {
+    background-color: #caab79;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+}
+
+#room_sm span:nth-of-type(1) img{
+    width: 100%;
+}
+
+#room_sm span:nth-of-type(2) img{
+    width: 100%;
+}
+
+#room_sm span:nth-of-type(3) {
+    padding: 3% 0;
+}
+
+#room_sm span:nth-of-type(3)::after {
+    position: absolute;
+    bottom: 1.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.roominfo {
+    width: 100%;
+    text-align: center;
+}
+
+.roominfo h1 {
+    font-size: 1.5rem;
+    padding-top: 3%;
+}
+
+.roominfo p {
+    font-size: 0.8rem;
+    line-height: 2;
+    position: relative;
+    padding: 5% 0;
+}
+
+.roominfo span {
+    font-size: 22px;
+    position: absolute;
+    right: 35%;
+    bottom: -80%;
+}
+
+
+/*  */
+#food {
+    display: none;
+}
+
+#food_sm {
+    color: #fff;
+}
+
+.bg1 {
+    background-color: #5C4733;
+    padding: 5%;
+    position: relative;
+    padding-bottom: 20%;
+}
+
+.foodpic {
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(20%);
+}
+
+
+.bg1 span img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.food1 {
+    width:30%;
+}
+
+.food2 {
+    width: 50%;
+}
+
+.bg1 h1 {
+    color: #999;
+    font-size: 1.5rem;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.bg1 p {
+    font-size: 0.7rem;
+    line-height: 2;
+    padding: 0 4%;
+    padding-bottom: 5%;
+}
+
+.more {
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    font-size: 1rem;
+}
+
+.more::after{
+    position: absolute;
+    bottom: -10%;
+    left: -100%;
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: #fff;
+}
+
+
+/*  */
+
+#info {
+    display: flex;
+    padding: 10% 5% 7%;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    flex-flow: column;
+}
+
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    order: 2;
+    justify-content: center;
+}
+
+.infoLeft h1 {
+    text-align: center;
+    line-height: 2;
+}
+
+.infobg {
+    width: 100%;
+    background-image: url(./image/infobg.png);
+    background-position: center center;
+    background-size: cover;
+    aspect-ratio: 1 / 0.6;
+    order: 1;
+}
+
+#info ul {
+    display: flex;
+    font-size: 0.8rem;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+.reserv {
+    width: 40%;
+    aspect-ratio: 1 / 0.3;
+    background-color: #2B3969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.plan {
+    width: 40%;
+    aspect-ratio: 1 / 0.3;
+    background-color: #2E49A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.cancel {
+    position: relative;
+    padding-left: 3%;
+    margin-bottom: 8%;
+}
+
+.cancel::before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    content: '';
+    background-color: #999;
+}
+
+.reservTel {
+    position: relative;
+    padding-left: 3%;
+}
+
+.reservTel::before {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    content: '';
+    background-color: #999;
+}
+
+.tel {
+    display: flex;
+    padding-left: 3%;
+    padding-top: 4%;
+    font-size: 0.8rem;
+}
+
+.tel p:nth-child(2){
+    font-size: 0.7rem;
+    color: #777777;
+}
+
+footer {
+    background-color: #06112F;
+    color: #fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    writing-mode: vertical-lr;
+    font-size: 0.8rem;
+    padding-left: 5%;
+    position: relative;
+}
+
+footer h1::after{
+    position: absolute;
+    bottom: -25%;
+    right: -30%;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150%;
+    background-color: #fff;
+}
+
+.footerInfo {
+    padding-left: 5%;
+    font-size: 0.7rem;
+}
+
+.footerInfo div {
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+
+.footerInfo div span {
+    position: relative;
+    margin-left: 10%;
+
+}
+
+.footerInfo div span::before{
+    position: absolute;
+    top: 44%;
+    left: -12%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo div span::after{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo h3 {
+    margin-bottom: 1%;
+    font-weight: 700;
+    font-size: 0.6rem;
+    padding-bottom: 2%;
+}
+
+.footerInfo p {
+    font-size: 0.6rem;
+}
+
+.icon{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 18%;
+}
+
+.icon span img{
+    width: 30px;
+}

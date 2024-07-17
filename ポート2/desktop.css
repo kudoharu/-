@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BIZ+UDMincho&display=swap');
+
+body {
+    font-family: "BIZ UDMincho", serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+}
+#banner {
+    background-image: url(./image/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.menu {
+    height: 230px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: end;
+    padding-top: 5%;
+    padding-right: 15%;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.menu ul li {
+    padding: 0 1%;
+}
+
+.catch {
+    padding-left: 15%;
+    color: #fff;
+    font-size: 2em;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-lr;
+    color: #fff;
+    font-size: 64px;
+}
+
+/*  */
+
+
+#intro {
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    background-color: #001B33;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.syoukai1 {
+    width: 100%;
+    display: flex;
+    padding-top: 5%;
+    transform: translateY(-20%);
+}
+
+
+
+.syoukai1 img{
+    max-width: 1090px;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    object-fit: contain;
+}
+
+.syoukai1 div {
+    padding: 5%;
+    min-width: 30vw;
+}
+
+.syoukai1 h1 {
+    color: #999;
+    font-size: 32px;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.syoukai1 h1::after {
+    position: absolute;
+    bottom: 30%;
+    right: -2%;
+    content: "";
+    display: block;
+    width: 70%;
+    height: 3px;
+    background-color: #999;
+}
+
+.syoukai1 p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.5;
+    position: relative;
+}
+
+
+
+.syoukai2 {
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+}
+
+.syoukai2 p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.5;
+    padding-top: 5%;
+    position: relative;
+    text-align: right;
+    display: inline-block;
+    min-width: 400px;
+}
+
+.syoukai2 p::before{
+    content: "";
+    display: block;
+    width: 3px;
+    height: 90px;
+    background-color: #999;
+    position: absolute;
+    left: 10%;
+}
+
+.syoukai2 span {
+    max-width: 40vw;
+    padding-right: 15%;
+    padding-left: 10vw;
+}
+
+.syoukai2 img{
+    max-width: 610px;
+    width: 100%;
+    height: 100%;
+    max-height: 370px;
+    object-fit: cover;
+}
+
+/*  */
+
+#ohuro {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.ohuropic {
+    overflow: hidden;
+    padding-top: 10%;
+
+}
+.ohuropic ul {
+    display: flex;
+    flex: 1;
+    transform: translateX(-6.5%);
+    animation: scroll 20s linear infinite;
+}
+
+.ohuropic li {
+    flex: 0 0 33.333%;
+    padding: 0 1%;
+    box-sizing: border-box;
+}
+
+.ohuropic li img {
+    width: 100%;
+    object-fit: cover; 
+}
+
+@keyframes scroll {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.ohuroinfo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.ohuroinfo h1 {
+    width: 900px;
+    font-size: 30px;
+    padding: 3% 0;
+    text-align: center;
+    position: relative;
+}
+
+.ohuroinfo h1::after {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+.ohuroinfo p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+}
+
+/*  */
+#room_sm{
+    display: none;
+}
+
+#room {
+    height: 100vh;
+    background-color: #caab79;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+#room div {
+    width: 50%;
+}
+
+.roominfo {
+    position: relative;
+    padding-left: 15%;
+}
+
+.roominfo h1 {
+    font-size: 36px;
+    padding-left: 5%;
+}
+
+.roominfo p {
+    font-size: 18px;
+    line-height: 2;
+    position: relative;
+    padding: 5% 0;
+    min-width: 420px;
+}
+
+.roominfo p::before{
+    position: absolute;
+    bottom: 15%;
+    left:-5%;
+    content: "";
+    display: block;
+    width: 3px;
+    height: 120px;
+    background-color: #fff;
+}
+
+.roominfo span {
+    font-size: 22px;
+    position: absolute;
+    right: 30%;
+    bottom: -20%;
+}
+
+.roominfo span::after {
+    position: absolute;
+    bottom: -10%;
+    left: -100%;
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.roompic {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.roompic span {
+    padding-top: 2%;
+}
+
+/*  */
+#food_sm {
+    display: none;
+}
+
+#food {
+    height: 100vh;
+    display: flex;
+    color: #fff;
+}
+
+.bg1 {
+    width: 50%;
+    background-color: #3C3C3C;
+    padding: 5%;
+    position: relative;
+}
+
+.foodpic {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg1 span {
+    display: block;
+}
+
+.bg1 span img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.food1 {
+    width: 50%;
+}
+
+.food2 {
+    width: 30%;
+    height: 30%;
+    transform: translate(40%,85%);
+}
+
+.bg1 h1 {
+    color: #999;
+    font-size: 36px;
+    padding-left: 18%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.bg1 p {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 15%;
+}
+
+.more {
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    font-size: 22px;
+}
+
+.more::after{
+    position: absolute;
+    bottom: -10%;
+    left: -100%;
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.bg2 {
+    width: 50%;
+    background-color: #5C4733;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg2 span {
+    padding: 5%;
+}
+
+.bg2 span img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*  */
+
+#info {
+    height: 50vh;
+    display: flex;
+    padding: 10% 5% 7%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.infoLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.infoLeft h1 {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2;
+}
+
+.infobg {
+    max-width: 900px;
+    width: 100%;
+    max-height: 600px;
+    background-image: url(./image/infobg.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#info ul {
+    display: flex;
+}
+
+.reserv {
+    width: 250px;
+    height: 60px;
+    background-color: #2B3969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.plan {
+    width: 250px;
+    height: 60px;
+    background-color: #2E49A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+
+.cancel {
+    position: relative;
+    padding-left: 3%;
+}
+
+.cancel::before {
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    content: '';
+    background-color: #999;
+}
+
+.reservTel {
+    position: relative;
+    padding-left: 3%;
+}
+
+.reservTel::before {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 4px;
+    height: 32px;
+    content: '';
+    background-color: #999;
+}
+
+.tel {
+    display: flex;
+    padding-left: 3%;
+    padding-top: 4%;
+    align-items: center;
+}
+
+.tel p:nth-child(2){
+    font-size: 14px;
+    color: #777777;
+}
+
+footer {
+    background-color: #06112F;
+    color: #fff;
+    height: 270px;
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    writing-mode: vertical-lr;
+    font-size: 34px;
+    padding-left: 15%;
+    position: relative;
+}
+
+footer h1::after{
+    position: absolute;
+    bottom: -25%;
+    right: -10%;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150%;
+    background-color: #fff;
+}
+
+.footerInfo {
+    padding-left: 3%;
+}
+
+.footerInfo div {
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.footerInfo h2 {
+    font-size: 20px;
+}
+
+.footerInfo div span {
+    position: relative;
+    margin-left: 10%;
+}
+
+.footerInfo div span::before{
+    position: absolute;
+    top: 44%;
+    left: -12%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo div span::after{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo h3 {
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.icon{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.icon span {
+    padding: 0 3% ;
+}

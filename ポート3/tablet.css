@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=BIZ+UDMincho&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "BIZ UDMincho", serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+#header {
+    height: 100vh;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    box-sizing: border-box;
+    z-index: 10;
+    background-color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav h1 {
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    font-size: 1.2rem;
+    padding: 0 5%;
+}
+
+.banner {
+    display: flex;
+    height: 100vh;
+    position: relative;
+}
+
+.bannerBg1 {
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    background-image: url(./image/headbg1.jpeg);
+    width: 75%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.bannerBg2 {
+    background-image: url(./image/headbg2.jpeg);
+    width: 50%;
+    height: 100%;
+    background-position: -10% 80%;
+    background-size: cover;
+    transform: translateX(0%);
+    z-index: -1;
+    position: absolute;
+    right: 0;
+}
+
+#header span {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: translateY(-250%);
+    flex-wrap: wrap;
+}
+#header span h1 {
+    color: #fff;
+    font-size: 5rem;
+    z-index: 10;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header span h2 {display: none;}
+
+.bannercover {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.headerarrow {
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+}
+
+.headerarrow img {
+    width: 100%;
+}
+
+/*  */
+
+#skin {
+    height: 100vh;
+    position: relative;
+}
+
+#skin .title {
+    clip-path: polygon(0 0, 100% 0%, 65% 100%, 0% 100%);
+    width: 45%;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    background-image: url(./image/skintitle.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+#skin h1 {
+    color: #fff;
+    z-index: 20;
+    position: absolute;
+    font-size: 2rem;
+    bottom: 5%;
+    left: 3%;
+}
+
+.arrow2 {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    bottom: 10%;
+    left: 12%;
+    height: 50px !important;
+    width: 200px;
+}
+
+.arrow2 a {
+    width: 50px !important; 
+    margin-right: 10%;
+}
+
+.arrow2 a:nth-child(2) img{
+    transform: rotate(180deg);
+}
+
+.arrow2 a img {
+    width: 100%;
+}
+
+#skin ul {
+    height: 100vh;
+}
+
+#skin ul li {
+    width: 100%;
+    height: 33.33%;
+    background-position: 30% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.skinBg li {
+    position: relative;
+}
+
+.skinBg li h2 {
+    right: 20%;
+    top: 50%;
+    width: 30%;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+}
+
+.skinBg span {
+    position: absolute;
+    width: 60px;
+    right: 15%;
+    bottom: 35%;
+    z-index: 10;
+}
+
+.skinBg span img{
+    transform: rotate(90deg);
+    width: 100%;
+}
+
+.skinBg1 {
+    background-image: url(./image/skinbg1.jpeg);
+}
+
+.skinBg2 {
+    background-image: url(./image/skinbg2.jpeg);
+}
+
+.skinBg3 {
+    background-image: url(./image/skinbg3.jpeg);
+}
+
+.skincover {
+    width: 100%;
+    height: 100%;
+    background-color: #2f4cb5;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*  */
+
+#make {
+    height: 100vh;
+    position: relative;
+}
+
+#make .title {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 45%;
+    height: 100%;
+    background-color: #999;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    background-image: url(./image/maketitle.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+}
+
+#make h1 {
+    color: #fff;
+    z-index: 20;
+    position: absolute;
+    font-size: 2rem;
+    bottom: 5%;
+    right: 3%;
+}
+
+.arrow3 {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    bottom: 10%;
+    right: 15%;
+    height: 50px !important;
+    width: 200px;
+}
+
+.arrow3 a {
+    width: 50px !important; 
+    margin-right: 10%;
+}
+
+.arrow3 a:nth-child(2) img{
+    transform: rotate(180deg);
+}
+
+.arrow3 a img {
+    width: 100%;
+}
+
+#make ul {
+    height: 100vh;
+}
+
+#make ul li {
+    width: 100%;
+    height: 33.33%;
+    background-position: 30% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.makeBg li {
+    position: relative;
+}
+
+.makeBg li h2 {
+    left: 15%;
+    top: 50%;
+    width: 30%;
+    font-size: 1.5rem;
+    position: absolute;
+    z-index: 10;
+    color: #fff;
+}
+
+.makeBg span {
+    position: absolute;
+    width: 60px;
+    left: 38%;
+    bottom: 35%;
+    z-index: 10;
+}
+
+.makeBg span img{
+    transform: rotate(90deg);
+    width: 100%;
+}
+
+.makeBg1 {
+    background-image: url(./image/makebg1.jpeg);
+}
+
+.makeBg2 {
+    background-image: url(./image/makebg2.jpeg);
+}
+
+.makeBg3 {
+    background-image: url(./image/makebg3.jpeg);
+}
+
+.makecover {
+    width: 100%;
+    height: 100%;
+    background-color: #df4fd1;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*  */
+#new {
+    height: 100vh;
+    background-color: #D6E9FF;
+    display: flex;
+    padding: 3% 0;
+    box-sizing: border-box; 
+    flex-flow: wrap;
+}
+
+#new h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.newTop {
+    background-image: url(./image/newtop.jpeg);
+    width: 100%;
+    height: 60%;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.newInfo {
+    width: 50%;
+    padding-left: 15%;
+    box-sizing: border-box;
+    padding-right: 5%;
+    z-index: 10;
+}
+
+.newInfo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.newInfo p {
+    padding-left: 10%;
+    line-height: 3;
+    font-size: 0.8rem;
+}
+
+.videoWrapper {
+    width: 50%;
+    z-index: 10;
+}
+
+.video {
+    width: 80%;
+    aspect-ratio: 16 / 9;
+    background-color: #fff;
+    margin-left: 5%;
+}
+
+.bgcover {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.3;
+    position: absolute;
+}
+
+.newunder {
+    width: 100%;
+    height: 20%;
+}
+
+.newBg {
+    display: flex;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.newBg li{
+    width: 13%;
+    aspect-ratio: 1 / 1;
+    background-position: center center;
+    background-size: cover;
+    margin-right: 4%;
+}
+
+.newBg1 {
+    background-image: url(./image/newbg1.jpeg);
+}
+
+.newBg2 {
+    background-image: url(./image/newbg2.jpeg);
+}
+
+.newBg3 {
+    background-image: url(./image/newbg3.jpeg);
+}
+
+.newBg4 {
+    background-image: url(./image/newbg4.jpeg);
+}
+
+.newBg span {
+    font-size: 2rem;
+    align-self: center;
+    margin-left: 5%;
+    padding-left: 10%;
+    padding-top: 5%;
+    border-bottom: 2px solid #8f8f8f;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    height: 200px;
+    background-color: #060D31;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 10% ;
+    justify-content: space-evenly;
+}
+
+.footer1 {
+    display: flex;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.footer1 h1 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer1 li {
+    width: 30px;
+    padding: 0 4%;
+}
+
+.footer1 li img {
+    width: 100%;
+}
+
+
+.footer2 {
+    margin-right: 5%;
+}
+
+.footer2 h2 {
+    color: #bebebe;
+    margin-bottom: 12%;
+    font-size: 1.2rem;
+}
+
+.footer2 li, .footer3 li{
+    margin-bottom: 12%;
+    font-size: 0.8rem;
+}

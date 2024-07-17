@@ -1,0 +1,402 @@
+body {
+    font-family: "BIZ UDMincho", serif;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+nav .logo {
+    font-size: 1.6rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 5%;
+    width: 50%;
+    justify-content: end;
+}
+
+/*  */
+header {
+    width: 100%;
+    position: relative;
+}
+
+header .bg {
+    width: 100%;
+    background-image: url(./image/roombanner.jpg);
+    aspect-ratio: 1 / 0.4;
+    background-position: center center;
+    background-size: cover;
+    filter: brightness(0.6);
+}
+
+header h1 {
+    position: absolute;
+    color: #fff;
+    font-size: 3rem;
+    left: 50%;
+    top: 50%;  
+    transform: translate(-50%, -50%);
+}
+
+/*  */
+.intro {text-align: center;}
+
+.intro h1 {
+    font-size: 2rem;
+    margin-top: 6%;
+    margin-bottom: 3%; 
+}
+
+.intro p {
+    line-height: 2;
+}
+
+/*  */
+.room {
+    margin-top: 5%;
+    padding: 0 20%;
+}
+
+.room h1 {
+    font-size: 1.7rem;
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
+
+.room .bg {
+    width: 100%;
+    aspect-ratio: 1 / 0.5;
+    background-position: center center;
+    background-size: cover;
+}
+
+.room .bg span {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 1% 2%;
+    margin-left: 3%;
+    margin-top: 2%;
+    font-size: 2rem;
+}
+
+.room .bg1 {
+    background-image: url(./image/bg1.png);
+}
+
+.room .bg2 {
+    background-image: url(./image/bg2.png);
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info > div:nth-of-type(1) {
+    padding: 3% 5%;
+    width: 60%;
+}
+
+.info > div:nth-of-type(1) p {
+    line-height: 2;
+}
+
+.info .button {
+    background-color: #2E49A5;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 2%;
+}
+
+.info > div:nth-of-type(2) {
+    padding: 3% 5%;
+    flex: 1;
+    color: #666;
+}
+
+.info > div:nth-of-type(2) h2 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+
+.info > div:nth-of-type(2) li {
+    display: flex;
+    padding-left: 1%;
+    padding-top: 8%;
+    align-items: center;
+}
+
+.info > div:nth-of-type(2) li span {
+    color: #000;
+    margin-right: 25%;
+}
+
+/*  */
+.amenity {
+    padding: 0 20%;
+    margin: 5% 0;
+}
+
+.amenity h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 3%;
+}
+
+.amenity p {
+    padding: 3% 5%;
+    border: 1px solid #ccc;
+    line-height: 2;
+}
+
+/*  */
+footer {
+    background-color: #06112F;
+    color: #fff;
+    height: 270px;
+    display: flex;
+    align-items: center;
+}
+
+footer h1 {
+    writing-mode: vertical-lr;
+    font-size: 34px;
+    padding-left: 15%;
+    position: relative;
+}
+
+footer h1::after{
+    position: absolute;
+    bottom: -25%;
+    right: -10%;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 150%;
+    background-color: #fff;
+}
+
+.footerInfo {
+    padding-left: 3%;
+}
+
+.footerInfo div {
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.footerInfo h2 {
+    font-size: 20px;
+}
+
+.footerInfo div span {
+    position: relative;
+    margin-left: 10%;
+}
+
+.footerInfo div span::before{
+    position: absolute;
+    top: 44%;
+    left: -12%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo div span::after{
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    content: "";
+    display: block;
+    width: 8%;
+    height: 1px;
+    background-color: #fff;
+}
+
+.footerInfo h3 {
+    margin-bottom: 1%;
+    font-weight: 700;
+}
+
+.icon{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.icon span {
+    padding: 0 3% ;
+}
+
+@media screen and (max-width: 1023px) and  (min-width: 768px){
+    .room {
+        padding: 0 10%;
+    }
+
+    .room .bg span {
+        font-size: 1.2rem;
+    }
+
+    .info > div:nth-of-type(1) p {
+        font-size: 0.8rem;
+    }
+
+    .info > div:nth-of-type(2) {
+        padding: 3% 3% 5% 0 ;
+    }
+
+    .info .button  {
+        width: 150px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    /*  */
+    .amenity {
+        padding: 0 10%;
+    }
+
+    /*  */
+    footer {
+        height: 200px;
+        font-size: 0.8rem;
+    }
+
+    footer h1 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    nav .logo {
+        margin: 4% 0;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 20%;
+    }
+
+    /*  */
+    header .bg {
+        aspect-ratio: 1 / 1;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /*  */
+    .intro h1 {
+        font-size: 1.2rem;
+    }
+
+    .intro p {
+        font-size: 0.8rem;
+    }
+
+    /*  */
+    .room {
+        padding: 0 5%;
+    }
+
+    .room > ul > li {
+        margin-top: 5%;
+    }
+
+    .room h1 {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    .room .bg span {
+        font-size: 1rem;
+    }
+
+    .info {
+        flex-flow: column;
+    }
+
+    .info > div:nth-of-type(1) {
+        width: 100%;
+        padding: 2% 1%;
+        font-size: 0.7rem;
+        box-sizing: border-box;
+    }
+
+    .info .button {
+        margin: 0 auto;
+        margin-top: 3%;
+    }
+
+    /*  */
+    .amenity {
+        padding: 0 5%;
+        font-size: 0.6rem;
+    }
+
+    /*  */
+    footer {
+        width: 100%;
+        height: 150px;
+    }
+    
+    footer h1 {
+        font-size: 1rem;
+        padding-left: 10%;
+    }
+    
+    footer h1::after{
+        right: -35%;
+    }
+    
+    .footerInfo {
+        padding-left: 10%;
+        font-size: 0.7rem;
+    }
+    
+
+    .icon{
+        gap: 10%;
+        margin-right: 4%;
+    }
+    
+    .icon span img{
+        width: 30px;
+    }
+}
